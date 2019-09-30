@@ -1,7 +1,7 @@
 {
     "app-id": "org.tabos.Twofun",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.32",
+    "runtime-version": "3.34",
     "sdk": "org.gnome.Sdk",
     "command": "twofun",
     "finish-args": [
@@ -18,8 +18,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/tabos/twofun.git",
-                    "tag" : "0.2.1",
-                    "commit" : "c1d93c53da6074b0f1747e06db6dd0833a4e87e5"
+                    "tag" : "0.2.2",
+                    "commit" : "47f3d70ca3ddf8762064873a208eea5b2afd55b0"
                 }
             ]
         }
