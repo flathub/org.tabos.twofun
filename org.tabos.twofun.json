@@ -18,8 +18,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/tabos/twofun.git",
-                    "tag" : "0.3.1",
-                    "commit" : "f174b9ffcd2de3ff66cc9446d58227dd743bfbe9"
+                    "tag" : "0.3.2",
+                    "commit" : "6db3e29c1b4f77d17bd7e8c0b56179c1d674effe"
                 }
             ]
         }
