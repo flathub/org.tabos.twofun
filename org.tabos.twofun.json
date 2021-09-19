@@ -5,21 +5,58 @@
     "sdk": "org.gnome.Sdk",
     "command": "twofun",
     "finish-args": [
-        "--share=network",
         "--share=ipc",
-        "--socket=fallback-x11",
+        "--socket=x11",
         "--socket=wayland"
     ],
     "modules": [
         {
+            "name" : "libsass",
+            "buildsystem" : "meson",
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://github.com/lazka/libsass.git",
+                    "branch" : "meson"
+                }
+            ]
+        },
+        {
+            "name" : "sassc",
+            "buildsystem" : "meson",
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://github.com/lazka/sassc.git",
+                    "branch" : "meson"
+                }
+            ]
+        },
+        {
+            "name" : "libadwaita",
+            "buildsystem" : "meson",
+            "config-opts" : [
+                "-Dtests=false",
+                "-Dexamples=false"
+            ],
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://gitlab.gnome.org/GNOME/libadwaita.git",
+                    "branch" : "main"
+                }
+            ]
+        },
+        {
             "name": "twofun",
             "buildsystem": "meson",
+            "config-opts": [ "--libdir=lib" ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://gitlab.com/tabos/twofun.git",
-                    "tag" : "0.3.2",
-                    "commit" : "6db3e29c1b4f77d17bd7e8c0b56179c1d674effe"
+                    "tag" : "0.4.0",
+                    "commit" : "c0c1417d296c003b481a8fc9f1aff674db604472"
                 }
             ]
         }
