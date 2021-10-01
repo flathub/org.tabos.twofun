@@ -6,8 +6,9 @@
     "command": "twofun",
     "finish-args": [
         "--share=ipc",
-        "--socket=x11",
-        "--socket=wayland"
+        "--socket=fallback-x11",
+        "--socket=wayland",
+        "--device=dri"
     ],
     "modules": [
         {
@@ -55,8 +56,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/tabos/twofun.git",
-                    "tag" : "0.4.0",
-                    "commit" : "c0c1417d296c003b481a8fc9f1aff674db604472"
+                    "tag" : "0.4.1",
+                    "commit" : "abc03a2618f2e5321f12036251874fe22f3d7b1a"
                 }
             ]
         }
