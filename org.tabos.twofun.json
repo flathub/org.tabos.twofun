@@ -21,6 +21,10 @@
                     "url": "https://gitlab.com/tabos/twofun.git",
                     "tag" : "0.4.1",
                     "commit" : "abc03a2618f2e5321f12036251874fe22f3d7b1a"
+                },
+                {
+                    "type": "patch",
+                    "path" : "fix-appdata.patch"
                 }
             ]
         }

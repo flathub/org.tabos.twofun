@@ -1,0 +1,49 @@
+From b92832ae916de849cf44646f58562bf4fc557dd9 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Sun, 10 Nov 2024 21:25:05 +0300
+Subject: [PATCH] Fix appdata papercuts
+
+- Add missing developer name
+- Remove one of Purism tag to pass appstreamcli validation
+---
+ data/org.tabos.twofun.appdata.xml.in | 8 +++-----
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+
+diff --git a/data/org.tabos.twofun.appdata.xml.in b/data/org.tabos.twofun.appdata.xml.in
+index 1fc4b11..70a6944 100644
+--- a/data/org.tabos.twofun.appdata.xml.in
++++ b/data/org.tabos.twofun.appdata.xml.in
+@@ -13,11 +13,10 @@
+   <description>
+     <p>Multiplayer game collection for touch devices.</p>
+   </description>
+-  <categories>
+-    <category>Games</category>
+-   </categories>
++  <developer_name>Tabos.org</developer_name>
+   <url type="homepage">https://tabos.org/projects/twofun/</url>
+   <url type="bugtracker">https://gitlab.com/tabos/twofun/issues</url>
++  <url type="vcs-browser">https://gitlab.com/tabos/twofun/</url>
+   <url type="donation">https://www.paypal.me/tabos/10</url>
+   <kudos>
+     <kudo>ModernToolkit</kudo>
+@@ -31,7 +30,7 @@
+     <display_length compare="ge">360</display_length>
+   </requires>
+   <screenshots>
+-    <screenshot>
++    <screenshot type="default">
+       <image>https://gitlab.com/tabos/twofun/-/raw/master/data/screenshots/twofun1.png</image>
+     </screenshot>
+     <screenshot>
+@@ -80,7 +79,6 @@
+     </release>
+   </releases>
+   <custom>
+-    <value key="Purism::form_factor">workstation</value>
+     <value key="Purism::form_factor">mobile</value>
+   </custom>
+ </component>
+--
+libgit2 1.7.2
+
