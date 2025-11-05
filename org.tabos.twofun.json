@@ -1,7 +1,7 @@
 {
     "app-id": "org.tabos.twofun",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "47",
+    "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
     "command": "twofun",
     "finish-args": [
@@ -11,20 +11,6 @@
         "--device=dri"
     ],
     "modules": [
-        {
-            "name": "blueprint-compiler",
-            "buildsystem": "meson",
-            "cleanup": [
-                "*"
-            ],
-            "sources": [
-              {
-                "type": "git",
-                "url": "https://gitlab.gnome.org/jwestman/blueprint-compiler",
-                "tag" : "v0.14.0"
-              }
-            ]
-        },
         {
             "name": "twofun",
             "buildsystem": "meson",
